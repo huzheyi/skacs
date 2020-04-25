@@ -40,7 +40,7 @@ PIDFILE_SMARTDNS=/var/run/smartdns.pid
 PIDFILE_CHINADNS=/var/run/chinadns.pid
 PIDFILE_ADG=/var/run/adguardhome.pid
 
-#Use gen-iplist.sh to update files below
+#Use iplist.sh to update files below
 GFWLIST=$PROJECT/conf/gfwlist.txt
 CHNROUTE=$PROJECT/conf/chnroute.txt
 CHNROUTE6=$PROJECT/conf/chnroute6.txt
