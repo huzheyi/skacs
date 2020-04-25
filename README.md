@@ -18,8 +18,8 @@ Skacs方案，整合了Shadowsocks-libev+kcptun+AdGuardHome+ChinaDNS-NG+SmartDNS
 | *[openssl](https://www.openssl.org/)* | 1.1.0l | N | 2020-04-23 |
 
 > 注：
-> Shadowsocks-libev采用部分动态链接编译，strip后体积相当小
-> 源码编译平台为Debian Stretch (Based on qemu-system-mipsel)
+> * Shadowsocks-libev采用部分动态链接编译，strip后体积相当小
+> * 源码编译平台为Debian Stretch (Based on qemu-system-mipsel)
 
 ## 功能说明
 
@@ -51,7 +51,7 @@ Skacs方案，整合了Shadowsocks-libev+kcptun+AdGuardHome+ChinaDNS-NG+SmartDNS
 6. 由于kcptun占用内存较多默认未启用，如有需求可根据实际情况去掉启动脚本中的相关注释
 
 > 注：
-> 由于不具备公网IPv6，故本工具暂时只支持处理IPv4访问，如有需求可自行调整配置或整合[ss-tproxy](https://github.com/zfl9/ss-tproxy/blob/master/ss-tproxy)工具使用
+> * 由于不具备公网IPv6，故本工具暂时只支持处理IPv4访问，如有需求可自行调整配置或整合[ss-tproxy](https://github.com/zfl9/ss-tproxy/blob/master/ss-tproxy)工具使用
 
 ## 鸣谢
 
