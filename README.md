@@ -36,14 +36,14 @@ Skacs方案，整合了Shadowsocks-libev+kcptun+AdGuardHome+ChinaDNS-NG+SmartDNS
 ## 使用说明
 
 1. 将本项目克隆后，将`skacs`目录放至设备`/config/`目录下，`init.sh`脚本放至设备`/config/scripts/post-config.d/`目录下，`/config/`目录不会因系统固件更新而丢失
-2. `skacs/gen-iplist.sh`更新gfwlist黑名单和境内IP列表
+2. `skacs/iplist.sh`更新gfwlist黑名单和境内IP列表
 3. 按照实际情况，配置`skacs/conf/`目录下的Shadowsocks-libev、kcptun等配置文件
-4. `sudo skacs/bin/start-all.sh start｜stop|restart|status`，分别为启动、停止、重启和查看服务
+4. `sudo skacs/bin/skacs.sh start｜stop|restart|status`，分别为启动、停止、重启和查看服务
 5. 首次启动后浏览器访问路由器3000端口，对AdGuard Home做初始配置
 
 ## 参数配置
 
-1. 启动脚本`skacs/bin/start-all.sh`中的ISPDNS和BYPASS_RANGE，可根据实际情况配置
+1. 启动脚本`skacs/bin/kacs.sh`中的ISPDNS和BYPASS_RANGE，可根据实际情况配置
 2. ss-redir默认监听在1081端口，同时ss-local提供socks5代理，默认监听在1080端口
 3. AdGuard Home首次运行需访问3000端口页面做初始化配置，默认配置监听在5300端口，并配置上游DNS为ChinaDNS-NG
 4. ChinaDNS-NG默认监听在5301端口，默认采用gfwlist黑名单模式，国内上游DNS为ISPDNS(默认配置119.29.29.29)，可信上游DNS为SmartDNS
