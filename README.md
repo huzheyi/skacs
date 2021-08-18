@@ -26,7 +26,7 @@ Skacs方案，整合了Shadowsocks-libev+kcptun+AdGuardHome+ChinaDNS-NG+SmartDNS
 * DNS解析过程:
 
         客户端请求 --> dnsmasq -(转发)-> AdGuard Home -(过滤后转发)-> ChinaDNS-NG
-        -(可信域名)-> ISPDN
+        -(可信域名)-> ISPDNS
         -(黑名单域名)-> SmartDNS
 
 * 系统通过dnsmasq将所有客户端的DNS请求转发至AdGuard Home，AdGuard Home在进行广告过滤后，将请求转发至上游ChinaDNS-NG，ChinaDNS-NG将根据规则转发至上游国内DNS和可信DNS，SmartDNS支持采用多种DNS查询协议并选出最佳IP地址                
