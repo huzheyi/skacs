@@ -14,7 +14,7 @@ Skacs方案，整合了Shadowsocks-libev+kcptun+AdGuardHome+ChinaDNS-NG+SmartDNS
 | [kcptun](https://github.com/xtaci/kcptun) | 20200409 | N | 2020-04-09 |
 | [AdGuard Home](https://github.com/AdguardTeam/AdGuardHome) | 0.101.0 | N | 2020-03-13 |
 | [ChinaDNS-NG](https://github.com/zfl9/chinadns-ng) | 1.0-beta.22 | Y | 2020-04-23 |
-| [SmartDNS](https://github.com/pymumu/smartdns) | 1.2021.10.16-0550 | Y | 2021-10-22 |
+| [SmartDNS](https://github.com/pymumu/smartdns) | 36.1 | N | 2022-04-05 |
 | *[openssl](https://www.openssl.org/)* | 1.1.0l | N | 2020-04-23 |
 
 > 注：
@@ -51,7 +51,7 @@ Skacs方案，整合了Shadowsocks-libev+kcptun+AdGuardHome+ChinaDNS-NG+SmartDNS
 6. 由于kcptun占用内存较多默认未启用，如有需求可根据实际情况去掉启动脚本中的相关注释
 
 > 注：
-> * 由于不具备公网IPv6，故本工具暂时只支持处理IPv4访问，如有需求可自行调整配置或整合[ss-tproxy](https://github.com/zfl9/ss-tproxy/blob/master/ss-tproxy)工具使用
+> * 由于本人暂无IPv6科学上网需求，故本工具暂时只支持处理IPv4访问，如有需求可自行调整配置或整合[ss-tproxy](https://github.com/zfl9/ss-tproxy/blob/master/ss-tproxy)工具使用
 
 ## 鸣谢
 
