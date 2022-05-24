@@ -6,20 +6,22 @@ Skacs方案，整合了Shadowsocks-libev+kcptun+AdGuardHome+ChinaDNS-NG+SmartDNS
 
 | 名称 | 版本 | 是否源码编译 | 编译(发布)日期 |
 | --- | --- | --- | --- |
-| [Shadowsocks-libev](https://github.com/shadowsocks/shadowsocks-libev) | 3.3.4 | Y | 2020-04-25 |
-| *[libsodium](https://www.libsodium.org/)* | 1.0.18 | Y | 2020-04-21 |
-| *[mbedtls](https://tls.mbed.org/)* | 2.16.6 | Y | 2020-04-21 |
-| *[c-ares](https://c-ares.haxx.se/)* | 1.16 | Y | 2020-04-23 |
-| *[libev](http://libev.schmorp.de/)* | 4.33 | Y | 2020-04-23 |
+| [Shadowsocks-libev](https://github.com/shadowsocks/shadowsocks-libev) | 3.3.5 | Y | 2022-05-17 |
+| *[libsodium](https://www.libsodium.org/)* | 1.0.18 | Y | 2022-05-17 |
+| *[mbedtls](https://tls.mbed.org/)* | 2.28.0 | Y | 2022-05-17 |
+| *[c-ares](https://c-ares.haxx.se/)* | 1.18.1 | Y | 2022-05-17 |
+| *[libev](http://libev.schmorp.de/)* | 4.33 | Y | 2022-05-17 |
+| *[pcre](https://www.pcre.org/)* | 8.45 | Y | 2022-05-17 |
 | [kcptun](https://github.com/xtaci/kcptun) | 20200409 | N | 2020-04-09 |
-| [AdGuard Home](https://github.com/AdguardTeam/AdGuardHome) | 0.101.0 | N | 2020-03-13 |
+| [AdGuard Home](https://github.com/AdguardTeam/AdGuardHome) | 0.107.6 | N | 2022-05-17 |
 | [ChinaDNS-NG](https://github.com/zfl9/chinadns-ng) | 1.0-beta.25 | Y | 2021-10-16 |
 | [SmartDNS](https://github.com/pymumu/smartdns) | 36.1 | Y | 2022-05-16 |
-| *[openssl](https://www.openssl.org/)* | 1.1.0l | N | 2020-04-23 |
+| *[openssl](https://www.openssl.org/)* | 1.1.0o | N | 2022-05-17 |
 
 > 注：
-> * Shadowsocks-libev采用部分动态链接编译，strip后体积相当小
-> * 源码编译平台为Debian Stretch (Based on qemu-system-mipsel)
+> * Shadowsocks-libev、SmartDNS采用部分动态链接编译，strip后体积相当小
+> * AdGuard Home提供UPX压缩版本，体积较小，内存占用较大，也可选择官方原版
+> * 源码编译平台为Debian Stretch (交叉编译)
 
 ## 功能说明
 
